@@ -2,6 +2,7 @@ import React from "react";
 export default function MainSection5() {
     return (
         <section
+            id="token"
             className="elementor-section elementor-top-section elementor-element elementor-element-ed6e746 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="ed6e746" data-element_type="section">
             <div className="elementor-container elementor-column-gap-default">

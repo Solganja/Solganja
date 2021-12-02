@@ -58,22 +58,22 @@ export default function Header() {
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
                                                     
-                                                    <div className="elementor-item elementor-item-anchor">How To Buy</div>
+                                                    <a href="#buy" className="elementor-item elementor-item-anchor">How To Buy</a>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
                                                     
-                                                    <div className="elementor-item elementor-item-anchor">Plant Seeds</div>
+                                                    <a href="#seed" className="elementor-item elementor-item-anchor">Plant Seeds</a>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
                                                     
-                                                    <div className="elementor-item elementor-item-anchor">Roadmap</div>
+                                                    <a href="#roadmap" className="elementor-item elementor-item-anchor">Roadmap</a>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
                                                     
-                                                    <div className="elementor-item elementor-item-anchor">Tokenomics</div>
+                                                    <a href="#token" className="elementor-item elementor-item-anchor">Tokenomics</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -93,23 +93,23 @@ export default function Header() {
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
                                                     
-                                                    <div className="elementor-item elementor-item-ancho"
-                                                        tabIndex="-1">How To Buy</div></li>
+                                                    <a href="#buy" className="elementor-item elementor-item-anchor"
+                                                        tabIndex="-1">How To Buy</a></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
                                                     
-                                                    <div className="elementor-item elementor-item-ancho"
-                                                        tabIndex="-1">Plant Seeds</div></li>
+                                                    <a href="#seed" className="elementor-item elementor-item-anchor"
+                                                        tabIndex="-1">Plant Seeds</a></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
                                                     
-                                                    <div className="elementor-item elementor-item-ancho"
-                                                        tabIndex="-1">Roadmap</div></li>
+                                                    <a href="#roadmap" className="elementor-item elementor-item-anchor"
+                                                        tabIndex="-1">Roadmap</a></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
                                                     
-                                                    <div className="elementor-item elementor-item-ancho"
-                                                        tabIndex="-1">Tokenomics</div></li>
+                                                    <a href="#token" className="elementor-item elementor-item-anchor"
+                                                        tabIndex="-1">Tokenomics</a></li>
                                             </ul>
                                         </nav>
                                     </div>

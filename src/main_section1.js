@@ -2,6 +2,7 @@ import React from "react";
 export default function MainSection1() {
     return (
         <section
+            id="buy"
             className="elementor-section elementor-top-section elementor-element elementor-element-39c3663 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="39c3663" data-element_type="section"
             data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">

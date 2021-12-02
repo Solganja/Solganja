@@ -2,6 +2,7 @@ import React from "react";
 export default function MainSection8() {
     return (
         <section
+        id="roadmap"
             className="elementor-section elementor-top-section elementor-element elementor-element-c4346cb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="c4346cb" data-element_type="section">
             <div className="elementor-container elementor-column-gap-default">
@@ -11,7 +12,7 @@ export default function MainSection8() {
                         <div className="elementor-element elementor-element-8f5bfec elementor-widget elementor-widget-heading"
                             data-id="8f5bfec" data-element_type="widget" data-widget_type="heading.default">
                             <div className="elementor-widget-container">
-                                <h2 className="elementor-heading-title elementor-size-default">Solganja Roadmap</h2>
+                                <h2 className="elementor-heading-title elementor-size-default">Roadmap</h2>
                             </div>
                         </div>
                     </div>
