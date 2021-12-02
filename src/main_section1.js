@@ -90,17 +90,17 @@ export default function MainSection1() {
                                     data-id="b46cd22" data-element_type="column"
                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                     <div className="elementor-widget-wrap elementor-element-populated">
-                                        <div className="elementor-element elementor-element-6f7c9a0 elementor-widget elementor-widget-image"
-                                            data-id="6f7c9a0" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div className="elementor-widget-container">
-                                                <img width="285" height="283"
-                                                    src="solganja.png"
-                                                    className="attachment-large size-large width-285" alt="" loading="lazy"
-                                                    srcSet="solganja.png 285w, solganja.png 150w"
-                                                    sizes="(max-width: 285px) 100vw, 285px" />
-                                            </div>
-                                        </div>
+                                    <div className="elementor-element elementor-element-7e3412e elementor-widget elementor-widget-image"
+                                    data-id="7e3412e" data-element_type="widget" data-widget_type="image.default">
+                                    <div className="elementor-widget-container">
+                                        <img width="285" height="283"
+                                            src="solganja.png"
+                                            className="attachment-full size-full" alt="" loading="lazy"
+                                            srcSet="solganja.png 285w, solganja.png 150w"
+                                            sizes="(max-width: 285px) 100vw, 285px"
+                                            style={{ width: '100%', height: '99.3%', maxWidth: '285px' }} />
+                                    </div>
+                                </div>
                                     </div>
                                 </div>
                             </div>

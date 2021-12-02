@@ -20,7 +20,8 @@ export default function MainSection6() {
                                     src="solganja.png"
                                     className="attachment-large size-large width-" alt="" loading="lazy"
                                     srcSet="solganja.png 285w, solganja.png 150w"
-                                    sizes="(max-width: 285px) 100vw, 285px" />
+                                    sizes="(max-width: 285px) 100vw, 285px"
+                                    style={{ width: '100%', height: '99.3%', maxWidth: '285px' }} />
                             </div>
                         </div>
                         <div className="elementor-element elementor-element-a9b08cf elementor-widget elementor-widget-heading"
