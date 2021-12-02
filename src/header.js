@@ -38,8 +38,8 @@ export default function Header() {
                                     data-id="48327ec" data-element_type="widget"
                                     data-widget_type="theme-site-title.default">
                                     <div className="elementor-widget-container">
-                                        <h2 className="elementor-heading-title elementor-size-default"><a
-                                            href="https://solganja.com">Solganja</a></h2>
+                                        <h2 className="elementor-heading-title elementor-size-default">
+                                            <a href="https://solganja.com">Solganja</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -57,19 +57,23 @@ export default function Header() {
                                             <ul id="menu-1-4b27495" className="elementor-nav-menu">
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-                                                    <a className="elementor-item elementor-item-anchor">How To Buy</a>
+                                                    
+                                                    <div className="elementor-item elementor-item-anchor">How To Buy</div>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                                                    <a className="elementor-item elementor-item-anchor">Plant Seeds</a>
+                                                    
+                                                    <div className="elementor-item elementor-item-anchor">Plant Seeds</div>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
-                                                    <a className="elementor-item elementor-item-anchor">Roadmap</a>
+                                                    
+                                                    <div className="elementor-item elementor-item-anchor">Roadmap</div>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                                                    <a className="elementor-item elementor-item-anchor">Tokenomics</a>
+                                                    
+                                                    <div className="elementor-item elementor-item-anchor">Tokenomics</div>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -88,20 +92,24 @@ export default function Header() {
                                             <ul id="menu-2-4b27495" className="elementor-nav-menu">
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-                                                    <a className="elementor-item elementor-item-anchor"
-                                                        tabIndex="-1">How To Buy</a></li>
+                                                    
+                                                    <div className="elementor-item elementor-item-ancho"
+                                                        tabIndex="-1">How To Buy</div></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                                                    <a className="elementor-item elementor-item-anchor"
-                                                        tabIndex="-1">Plant Seeds</a></li>
+                                                    
+                                                    <div className="elementor-item elementor-item-ancho"
+                                                        tabIndex="-1">Plant Seeds</div></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
-                                                    <a className="elementor-item elementor-item-anchor"
-                                                        tabIndex="-1">Roadmap</a></li>
+                                                    
+                                                    <div className="elementor-item elementor-item-ancho"
+                                                        tabIndex="-1">Roadmap</div></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                                                    <a className="elementor-item elementor-item-anchor"
-                                                        tabIndex="-1">Tokenomics</a></li>
+                                                    
+                                                    <div className="elementor-item elementor-item-ancho"
+                                                        tabIndex="-1">Tokenomics</div></li>
                                             </ul>
                                         </nav>
                                     </div>
