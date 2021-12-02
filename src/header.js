@@ -57,19 +57,19 @@ export default function Header() {
                                             <ul id="menu-1-4b27495" className="elementor-nav-menu">
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-                                                    <a href="#" className="elementor-item elementor-item-anchor">How To Buy</a>
+                                                    <a className="elementor-item elementor-item-anchor">How To Buy</a>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                                                    <a href="#" className="elementor-item elementor-item-anchor">Plant Seeds</a>
+                                                    <a className="elementor-item elementor-item-anchor">Plant Seeds</a>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
-                                                    <a href="#" className="elementor-item elementor-item-anchor">Roadmap</a>
+                                                    <a className="elementor-item elementor-item-anchor">Roadmap</a>
                                                 </li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                                                    <a href="#" className="elementor-item elementor-item-anchor">Tokenomics</a>
+                                                    <a className="elementor-item elementor-item-anchor">Tokenomics</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -88,19 +88,19 @@ export default function Header() {
                                             <ul id="menu-2-4b27495" className="elementor-nav-menu">
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-                                                    <a href="#" className="elementor-item elementor-item-anchor"
+                                                    <a className="elementor-item elementor-item-anchor"
                                                         tabIndex="-1">How To Buy</a></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                                                    <a href="#" className="elementor-item elementor-item-anchor"
+                                                    <a className="elementor-item elementor-item-anchor"
                                                         tabIndex="-1">Plant Seeds</a></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
-                                                    <a href="#" className="elementor-item elementor-item-anchor"
+                                                    <a className="elementor-item elementor-item-anchor"
                                                         tabIndex="-1">Roadmap</a></li>
                                                 <li
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                                                    <a href="#" className="elementor-item elementor-item-anchor"
+                                                    <a className="elementor-item elementor-item-anchor"
                                                         tabIndex="-1">Tokenomics</a></li>
                                             </ul>
                                         </nav>
