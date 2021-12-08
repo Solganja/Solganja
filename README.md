@@ -1,9 +1,20 @@
-- 👋 Hi, we are @Solganja
-- 👀 A Solana inspired token
-- 💞️ We are looking to collaborate on the Solana Ecosystem
-- 📫 contact us - twitter/com/solganja
+# Raydium UI
 
-<!---
-Solganja/Solganja is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## Build Setup
+
+```bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
