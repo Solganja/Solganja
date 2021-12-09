@@ -148,6 +148,12 @@ export default {
 
     extend(config) {
       config.resolve.alias['@ant-design/icons/lib/dist$'] = path.resolve(__dirname, './src/utils/antd-icons.ts')
+    },
+
+    generate: {
+      dir: 'public',
+      subFolders: false,
+      fallback: '404.html'
     }
   }
 }
