@@ -151,7 +151,7 @@ export default {
     },
 
     generate: {
-      dir: 'public',
+      dir: 'dist',
       subFolders: false,
       fallback: '404.html'
     }
