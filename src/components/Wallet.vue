@@ -1,57 +1,82 @@
 <template>
-  <div>
-    <Button v-if="!wallet.connected" ghost @click="$accessor.wallet.openModal">
-      <Icon type="wallet" />
-      Connect
-    </Button>
-    <Button v-else ghost @click="$accessor.wallet.openModal">
-      <Icon type="wallet" />
-      {{ wallet.address.substr(0, 4) }}
-      ...
-      {{ wallet.address.substr(wallet.address.length - 4, 4) }}
-    </Button>
+  <div
+    class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-bcede4e"
+    data-id="bcede4e" data-element_type="column">
+    
+    <div class="elementor-widget-wrap elementor-element-populated">
+      <div class="elementor-element elementor-element-91a2b1b elementor-widget elementor-widget-button"
+        data-id="91a2b1b" data-element_type="widget" data-widget_type="button.default">
+        <div class="elementor-widget-container">
+          <div class="elementor-button-wrapper">
+            <!-- <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+              <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-icon elementor-align-icon-left">
+                  <i aria-hidden="true" class="fas fa-wallet"></i> </span>
+                <span class="elementor-button-text">Connet Wallet</span>
+              </span>
+            </a> -->
+            <a v-if="!wallet.connected" @click="$accessor.wallet.openModal" class="elementor-button-link elementor-button elementor-size-sm" style="width: 180px;" role="button">
+              <span class="elementor-button-content-wrapper">
+                <!-- <span class="elementor-button-icon elementor-align-icon-left"> -->
+                  <Icon type="wallet" />
+                  <span class="elementor-button-text">Connet Wallet</span>
+                <!-- </span> -->
+              </span>
+            </a>
+            <a v-else @click="$accessor.wallet.openModal" class="elementor-button-link elementor-button elementor-size-sm"  style="width: 180px;" role="button">
+              <span class="elementor-button-content-wrapper">
+                <!-- <span class="elementor-button-icon elementor-align-icon-left"> -->
+                  <Icon type="wallet" />
+                  <span class="elementor-button-text">{{ wallet.address.substr(0, 4) }} ... {{ wallet.address.substr(wallet.address.length - 4, 4) }}</span>
+                <!-- </span> -->
+              </span>
+            </a>
+            <Modal
+              :title="!wallet.connected ? 'Connect to a wallet' : 'Your wallet'"
+              :visible="wallet.modalShow"
+              :footer="null"
+              centered
+              @cancel="$accessor.wallet.closeModal"
+            >
+              <div v-if="!wallet.connected" class="select-wallet">
+                <Button v-for="(info, name) in wallets" :key="name" ghost @click="connect(name, info)">
+                  <span>{{ name }}</span>
+                  <img :src="importIcon(`/wallets/${name.replace(' ', '-').toLowerCase()}.png`)" />
+                </Button>
+              </div>
+              <div v-else class="wallet-info">
+                <p class="address" @click="debug">{{ wallet.address }}</p>
 
-    <Modal
-      :title="!wallet.connected ? 'Connect to a wallet' : 'Your wallet'"
-      :visible="wallet.modalShow"
-      :footer="null"
-      centered
-      @cancel="$accessor.wallet.closeModal"
-    >
-      <div v-if="!wallet.connected" class="select-wallet">
-        <Button v-for="(info, name) in wallets" :key="name" ghost @click="connect(name, info)">
-          <span>{{ name }}</span>
-          <img :src="importIcon(`/wallets/${name.replace(' ', '-').toLowerCase()}.png`)" />
-        </Button>
-      </div>
-      <div v-else class="wallet-info">
-        <p class="address" @click="debug">{{ wallet.address }}</p>
+                <Button ghost @click="disconnect"> DISCONNECT </Button>
 
-        <Button ghost @click="disconnect"> DISCONNECT </Button>
-
-        <div v-if="historyList.length" class="tx-history-panel">
-          <h2>Recent Transactions</h2>
-          <div v-for="txInfo in historyList" :key="txInfo.txid" class="tx-item">
-            <div class="extra-info">
-              <Icon v-if="txInfo.status === 'success'" class="icon" type="check-circle" :style="{ color: '#52c41a' }" />
-              <Icon
-                v-else-if="txInfo.status === 'fail'"
-                class="icon"
-                type="close-circle"
-                :style="{ color: '#fa8c16' }"
-              />
-              <Icon v-else-if="txInfo.status === 'droped'" class="icon" type="delete" :style="{ color: '#f5222d' }" />
-              <Icon v-else class="icon" type="loading" :style="{ color: '#1890ff' }" />
-              <a :href="`${$accessor.url.explorer}/tx/${txInfo.txid}`" target="_blank">{{
-                txInfo.description || txInfo.d /* old data polyfill*/
-              }}</a>
-            </div>
-            <div class="extra-info time">{{ $dayjs(txInfo.time || txInfo.t /* old data polyfill*/) }}</div>
+                <div v-if="historyList.length" class="tx-history-panel">
+                  <h2>Recent Transactions</h2>
+                  <div v-for="txInfo in historyList" :key="txInfo.txid" class="tx-item">
+                    <div class="extra-info">
+                      <Icon v-if="txInfo.status === 'success'" class="icon" type="check-circle" :style="{ color: '#52c41a' }" />
+                      <Icon
+                        v-else-if="txInfo.status === 'fail'"
+                        class="icon"
+                        type="close-circle"
+                        :style="{ color: '#fa8c16' }"
+                      />
+                      <Icon v-else-if="txInfo.status === 'droped'" class="icon" type="delete" :style="{ color: '#f5222d' }" />
+                      <Icon v-else class="icon" type="loading" :style="{ color: '#1890ff' }" />
+                      <a :href="`${$accessor.url.explorer}/tx/${txInfo.txid}`" target="_blank">{{
+                        txInfo.description || txInfo.d /* old data polyfill*/
+                      }}</a>
+                    </div>
+                    <div class="extra-info time">{{ $dayjs(txInfo.time || txInfo.t /* old data polyfill*/) }}</div>
+                  </div>
+                </div>
+              </div>
+            </Modal>  
           </div>
         </div>
       </div>
-    </Modal>
+    </div>
   </div>
+    
 </template>
 
 <script lang="ts">

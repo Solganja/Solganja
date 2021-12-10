@@ -102,6 +102,9 @@ export default class Default extends Vue {
 </script>
 
 <style lang="less">
+.ant-layout {
+  background-image: linear-gradient(80deg, #003C3F 0%, #210545 76%);
+}
 .ant-layout-content {
   min-height: calc(100vh - 64px - 82px);
 }

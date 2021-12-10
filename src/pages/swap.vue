@@ -1,5 +1,49 @@
 <template>
   <div class="swap container">
+    <link rel='stylesheet' id='wp-block-library-css'
+      href='https://solganja.com/wp-includes/css/dist/block-library/style.min.css' media='all' />
+    <link rel='stylesheet' id='cb70d11b8-css'
+      href='https://solganja.com/wp-content/uploads/essential-addons-elementor/734e5f942.min.css' media='all' />
+    <link rel='stylesheet' id='twenty-twenty-one-style-css'
+      href='https://solganja.com/wp-content/themes/twentytwentyone/style.css' media='all' />
+    <link rel='stylesheet' id='twenty-twenty-one-print-style-css'
+      href='https://solganja.com/wp-content/themes/twentytwentyone/assets/css/print.css' media='print' />
+    <link rel='stylesheet' id='elementor-icons-css'
+      href='https://solganja.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css'
+      href='https://solganja.com/wp-content/plugins/elementor/assets/css/frontend.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-5-css'
+      href='https://solganja.com/wp-content/uploads/elementor/css/post-5.css' media='all' />
+    <link rel='stylesheet' id='elementor-pro-css'
+      href='https://solganja.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css'
+      href='https://solganja.com/wp-content/uploads/elementor/css/global.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-7-css'
+      href='https://solganja.com/wp-content/uploads/elementor/css/post-7.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-31-css'
+      href='https://solganja.com/wp-content/uploads/elementor/css/post-31.css' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css'
+      href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CKumbh+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='elementor-icons-shared-0-css'
+      href='https://solganja.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css'
+      href='https://solganja.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css' media='all' /><link rel="stylesheet" id="cb70d11b8-css" href="https://solganja.com/wp-content/uploads/essential-addons-elementor/734e5f942.min.css?ver=1638538003" media="all">
+
+    <link rel="stylesheet" id="twae-fontello-css-css"
+      href="https://solganja.com/wp-content/plugins/timeline-widget-addon-for-elementor/assets/css/twae-fontello.css?ver=5.8.2"
+      media="all">
+    <link rel="stylesheet" id="font-awesome-5-all-css"
+      href="https://solganja.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.9.6"
+      media="all">
+    <link rel="stylesheet" id="twae-centered-css-css"
+      href="https://solganja.com/wp-content/plugins/timeline-widget-addon-for-elementor/assets/css/twae-centered-timeline.min.css?ver=5.8.2"
+      media="all">
+    <link rel="stylesheet" id="twae-color-typography-css"
+      href="https://solganja.com/wp-content/plugins/timeline-widget-addon-for-elementor/assets/css/twae-colors-typography.css?ver=5.8.2"
+      media="all">
+    <link rel="stylesheet" id="e-animations-css"
+      href="https://solganja.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.8"
+      media="all">
     <div class="page-head fs-container">
       <span class="title">Swap</span>
       <div class="buttons">
@@ -1848,6 +1892,9 @@ export default Vue.extend({
 </script>
 
 <style>
+.ant-layout {
+  display: flex;
+}
 .swap-confirm-modal .ant-modal-header .ant-modal-title {
   font-size: 22px;
 }

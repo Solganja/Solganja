@@ -1,23 +1,23 @@
 <template>
   <Header class="header fs-container" :class="isMobile ? 'mobile' : ''">
-    <NuxtLink to="/"><img class="logo" src="@/assets/icons/logo-text.svg" /></NuxtLink>
-
-    <!-- <div v-if="isMobile ? (navOpened ? true : false) : true" :class="isMobile ? 'mobile-nav' : ''">
-      <Nav @onSelect="() => (navOpened = false)" />
-    </div> -->
-
-    <div class="fs-container">
-      <Wallet />
-      <div
-        v-if="isMobile"
-        class="nav-button"
-        :class="navOpened ? 'opened' : ''"
-        @click="() => (navOpened = !navOpened)"
-      >
-        <span />
-        <span />
-        <span />
-        <span />
+    <NuxtLink to="/"><img class="logo" src="@/assets/icons/logo.svg" /></NuxtLink>
+    <div class="home page-template-default page page-id-2 wp-embed-responsive is-light-theme singular has-main-navigation elementor-default elementor-template-full-width elementor-kit-5 elementor-page-31">
+      <div data-elementor-type="header" data-elementor-id="7" class="elementor elementor-7 elementor-location-header">
+        <div class="elementor-section-wrap">
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-hidden-mobile elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="2c9a2fd" data-element_type="section"
+            data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+              <Wallet />
+              <div
+                v-if="isMobile"
+                class="nav-button"
+                :class="navOpened ? 'opened' : ''"
+                @click="() => (navOpened = !navOpened)"
+              >
+              </div>
+          </section>
+        </div>
       </div>
     </div>
   </Header>
@@ -53,6 +53,7 @@ export default Vue.extend({
 @import '../styles/variables';
 
 .header {
+  background-image: linear-gradient(80deg, #003C3F 0%, #210545 76%);
   border-bottom: 2px solid @modal-header-bg;
 
   .logo {

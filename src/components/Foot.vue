@@ -1,33 +1,11 @@
 <template>
   <Footer :class="isMobile ? 'mobile' : 'pc'">
-    <div v-if="!isMobile" class="logo">
-      <a href="/"><img src="@/assets/icons/logo-text.svg" /></a>
-    </div>
     <div class="link-menu">
       <NuxtLink :to="linkUrl.home"><span>Home</span></NuxtLink>
       <img v-if="!isMobile" class="logo" src="@/assets/icons/round.svg" />
       <NuxtLink :to="linkUrl.app"><span>App</span></NuxtLink>
       <img v-if="!isMobile" class="logo" src="@/assets/icons/round.svg" />
       <NuxtLink :to="linkUrl.info"><span>Info</span></NuxtLink>
-      <img v-if="!isMobile" class="logo" src="@/assets/icons/round.svg" />
-      <a :href="linkUrl.listing" target="_blank"><span>Listing</span></a>
-    </div>
-    <div class="icon_list">
-      <a :href="linkUrl.twitter" target="_blank" style="margin-left: 10px">
-        <img src="@/assets/icons/twitter.svg" width="20" height="20" />
-      </a>
-      <a :href="linkUrl.discord" target="_blank" style="margin-left: 10px">
-        <img src="@/assets/icons/discord.png" width="20" height="20" />
-      </a>
-      <a :href="linkUrl.telegram" target="_blank" style="margin-left: 10px">
-        <img src="@/assets/icons/telegram.svg" width="20" height="20" />
-      </a>
-      <a :href="linkUrl.medium" target="_blank" style="margin-left: 10px">
-        <img src="@/assets/icons/medium.svg" width="20" height="20" />
-      </a>
-    </div>
-    <div v-if="isMobile" class="logo">
-      <a href="/"><img src="@/assets/icons/logo-text.svg" /></a>
     </div>
   </Footer>
 </template>
@@ -93,8 +71,8 @@ export default class Foot extends Vue {
 
 .pc {
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
+  background-image: linear-gradient(80deg, #003C3F 0%, #210545 76%);
   .link-menu {
     a {
       display: inline-block;
